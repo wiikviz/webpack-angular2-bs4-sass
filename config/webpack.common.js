@@ -117,6 +117,14 @@ module.exports = function (options) {
           use: 'json-loader'
         },
 
+        {
+          test: /\.scss$/,
+          exclude: /node_modules/,
+          loaders: ['raw-loader', 'postcss-loader','sass-loader'] // sass-loader not scss-loader
+        },
+
+        { test: /\.(woff2?|ttf|eot|svg)$/, loader: 'url?limit=10000' },
+
         /*
          * to string and css loader support for *.css files
          * Returns file content as string
