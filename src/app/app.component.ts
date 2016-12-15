@@ -42,6 +42,8 @@ import { AppState } from './app.service';
       </span>
     </nav>
 
+    <alert type="success">hello</alert>
+
     <main>
       <router-outlet></router-outlet>
     </main>
