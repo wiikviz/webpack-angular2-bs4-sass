@@ -1,7 +1,3 @@
-import {Ng2BootstrapConfig, Ng2BootstrapTheme} from 'ng2-bootstrap/ng2-bootstrap';
-
-Ng2BootstrapConfig.theme = Ng2BootstrapTheme.BS4;
-
 // Angular 2
 // rc2 workaround
 import { enableDebugTools, disableDebugTools } from '@angular/platform-browser';

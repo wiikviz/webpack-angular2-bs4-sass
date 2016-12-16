@@ -13,7 +13,7 @@ import { AppState } from './app.service';
   selector: 'app',
   encapsulation: ViewEncapsulation.None,
   styleUrls: [
-    'app.component.scss'
+    './app.component.scss'
   ],
   template: `
     <nav>
@@ -42,7 +42,8 @@ import { AppState } from './app.service';
       </span>
     </nav>
 
-    <alert type="success">hello</alert>
+    <top-menu></top-menu>
+    <main-menu></main-menu>
 
     <main>
       <router-outlet></router-outlet>
