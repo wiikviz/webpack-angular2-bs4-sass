@@ -15,31 +15,33 @@ import {AppState} from './app.service';
   styleUrls: [
     './app.component.scss'
   ],
-  template: `
-    <nav>
-      <span>
-        <a [routerLink]=" ['./'] ">
-          Index
-        </a>
-      </span>
-      |
-      <span>
-        <a [routerLink]=" ['./home'] ">
-          Home
-        </a>
-      </span>
-      |
-      <span>
-        <a [routerLink]=" ['./detail'] ">
-          Detail
-        </a>
-      </span>
-      |
-      <span>
-        <a [routerLink]=" ['./about'] ">
-          About
-        </a>
-      </span>
+  template: `    
+    <nav class="navbar navbar-light bg-faded">
+    
+      <!-- Toggle Button -->
+      <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#nav-content">
+        ☰
+      </button>
+    
+      <!-- Nav Content -->
+      <div class="collapse navbar-toggleable-xs" id="nav-content">
+        <a class="navbar-brand" href="#">Logo</a>
+        <ul class="nav navbar-nav">
+          <li class="nav-item">
+             <a class="nav-link" [routerLink]=" ['./'] ">Index</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]=" ['./home'] " >Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]=" ['./detail'] ">Detail</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]=" ['./about'] ">About</a>
+          </li>
+        </ul>
+      </div>
+    
     </nav>
 
 
