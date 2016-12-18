@@ -22,26 +22,49 @@
 
 <body>
 
-  <app>
-    Loading...
-  </app>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
 
-  <!-- Google Analytics: change UA-71073175-1 to be your site's ID -->
-  <script>
-    (function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=r;A[l]=A[l]||function(){
-    (A[l].q=A[l].q||[]).push(arguments)},A[l].l=1*new Date();a=n.createElement(g),
-    r=n.getElementsByTagName(g)[0];a.async=1;a.src=u;r.parentNode.insertBefore(a,r)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      <div class="bootstrap-vertical-nav">
 
-    ga('create', 'UA-71073175-1', 'auto');
-    ga('send', 'pageview');
-  </script>
+        <nav class="navbar navbar-light bg-faded">
+          <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse"
+                  data-target="#exCollapsingNavbar2">
+            &#9776;
+          </button>
+          <div class="collapse navbar-toggleable-sm" id="exCollapsingNavbar2">
+            <a class="navbar-brand" href="#">Responsive navbar</a>
+            <ul class="nav navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
 
-  <% if (htmlWebpackPlugin.options.metadata.isDevServer && htmlWebpackPlugin.options.metadata.HMR !== true) { %>
-  <!-- Webpack Dev Server reload -->
-  <script src="/webpack-dev-server.js"></script>
-  <% } %>
+      </div>
 
-
+    </div>
+    <div class="col-md-9">
+      <app>
+        Loading...
+      </app>
+    </div>
+  </div>
+</div>
+<% if (htmlWebpackPlugin.options.metadata.isDevServer && htmlWebpackPlugin.options.metadata.HMR !== true) { %>
+<!-- Webpack Dev Server reload -->
+<script src="/webpack-dev-server.js"></script>
+<% } %>
 </body>
 </html>

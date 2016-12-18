@@ -1,7 +1,6 @@
 import {Component} from '@angular/core';
 import {NavigationEnd, Router} from '@angular/router';
 
-import {Ng2BootstrapConfig, Ng2BootstrapTheme} from 'ng2-bootstrap';
 import {ROUTES} from '../../app.routes';
 
 @Component({
@@ -9,7 +8,7 @@ import {ROUTES} from '../../app.routes';
   templateUrl: './main-menu.component.html'
 })
 export class MainMenuComponent {
-  public isBs3: boolean = Ng2BootstrapConfig.theme === Ng2BootstrapTheme.BS3;
+  public isBs3: boolean = false;
   public routes: any = ROUTES;
   public search: any = {text: ""};
   public hash: string = '';

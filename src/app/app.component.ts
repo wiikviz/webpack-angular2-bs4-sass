@@ -1,9 +1,9 @@
 /*
  * Angular 2 decorators and services
  */
-import { Component, ViewEncapsulation } from '@angular/core';
+import {Component, ViewEncapsulation} from '@angular/core';
 
-import { AppState } from './app.service';
+import {AppState} from './app.service';
 
 /*
  * App Component
@@ -42,8 +42,17 @@ import { AppState } from './app.service';
       </span>
     </nav>
 
-    <top-menu></top-menu>
-    <main-menu></main-menu>
+
+  <div class="col-xs-6 text-xs-right">
+    <div ngbDropdown [up]="true" class="d-inline-block">
+      <button class="btn btn-outline-primary" id="dropdownMenu2" ngbDropdownToggle>Toggle dropup</button>
+      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2">
+        <button class="dropdown-item">Action - 1</button>
+        <button class="dropdown-item">Another Action</button>
+        <button class="dropdown-item">Something else is here</button>
+      </div>
+    </div>
+  </div>
 
     <main>
       <router-outlet></router-outlet>
@@ -66,8 +75,7 @@ export class AppComponent {
   name = 'Angular 2 Webpack Starter';
   url = 'https://twitter.com/AngularClass';
 
-  constructor(
-    public appState: AppState) {
+  constructor(public appState: AppState) {
 
   }
 

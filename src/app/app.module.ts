@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule, PreloadAllModules } from '@angular/router';
 import { removeNgStyles, createNewHosts, createInputTransfer } from '@angularclass/hmr';
-import {Ng2BootstrapModule, Ng2BootstrapConfig, Ng2BootstrapTheme} from 'ng2-bootstrap/ng2-bootstrap';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { MainMenuComponent } from './common/main-menu/main-menu.component';
 import { TopMenuComponent } from './common/top-menu/top-menu.component';
@@ -24,9 +24,6 @@ import { NoContentComponent } from './no-content';
 import { XLarge } from './home/x-large';
 
 // set the theme to Bootstrap 4 before use
-
-
-Ng2BootstrapConfig.theme = Ng2BootstrapTheme.BS4;
 
 
 // Application wide providers
@@ -59,7 +56,7 @@ type StoreType = {
     BrowserModule,
     FormsModule,
     HttpModule,
-    Ng2BootstrapModule,
+    NgbModule.forRoot(),
     RouterModule.forRoot(ROUTES, { useHash: true, preloadingStrategy: PreloadAllModules })
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection
