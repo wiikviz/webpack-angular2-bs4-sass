@@ -21,6 +21,11 @@ import '@angularclass/hmr';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/mergeMap';
 
+// Other famous libraries
+import 'jquery';
+import 'lodash';
+import 'bootstrap-loader'; // used to import bootstrap as scss
+
 if ('production' === ENV) {
   // Production
 

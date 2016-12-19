@@ -49,7 +49,7 @@ module.exports = function (options) {
      * See: http://webpack.github.io/docs/configuration.html#output
      */
     output: {
-
+      publicPath:'',
       /**
        * The output directory as absolute path (required).
        *
@@ -113,19 +113,6 @@ module.exports = function (options) {
        * See: https://github.com/webpack/webpack/commit/a04ffb928365b19feb75087c63f13cadfc08e1eb
        */
       // new NamedModulesPlugin(),
-
-      /**
-       * Plugin LoaderOptionsPlugin (experimental)
-       *
-       * See: https://gist.github.com/sokra/27b24881210b56bbaff7
-       */
-      new LoaderOptionsPlugin({
-        debug: true,
-        options: {
-
-        }
-      }),
-
     ],
 
     /**
