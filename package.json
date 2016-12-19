@@ -167,23 +167,16 @@
 
     "@types/core-js": "~0.9.35",
     "@types/jasmine": "~2.5.35",
-    "@types/protractor": "~1.5.20",
 
-    "compression-webpack-plugin": "~0.3.1",
     "html-webpack-plugin": "~2.24.1",
 
     "istanbul-instrumenter-loader": "~0.2.0",
     "karma": "~1.3.0",
-    "node-sass": "~3.13.0",
-    "phantomjs-prebuilt": "~2.1.13",
-    "protractor": "~4.0.8",
     "to-string-loader": "~1.1.5",
-    "typescript": "~2.0.3",
 
     "webpack": "2.1.0-beta.27",
 
     "webpack-dev-middleware": "~1.9.0",
-    "webpack-dev-server": "2.1.0-beta.11",
 
     "@types/selenium-webdriver": "2.53.36",
     "awesome-typescript-loader": "^3.0.0-beta.17",
@@ -192,7 +185,14 @@
     "imports-loader": "^0.7.0",
     "ts-helpers": "1.1.2",
     "tslint": "~4.1.1",
-    "tslint-loader": "^3.3.0"
+    "tslint-loader": "^3.3.0",
+    "typescript": "2.1.4",
+    "webpack-dev-server": "2.1.0-beta.12",
+    "protractor": "^4.0.10",
+    "@types/protractor": "^4.0.0",
+    "compression-webpack-plugin": "^0.3.2",
+    "phantomjs-prebuilt": "^2.1.14",
+    "node-sass": "^4.0.0"
   },
   "repository": {
     "type": "git",
